@@ -1,5 +1,3 @@
-YT Video Downloader
-
 
 A facile code for downloading YT videos!
 
