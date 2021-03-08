@@ -23,8 +23,10 @@ def Downloader():     #function that downloads the file in mp4 format
     video = url.streams.first()
     video.download()
     lbl3 = Label(root, text = 'DOWNLOADED')
-    lbl3.place(x= 180 , y = 210)  
-    lbl3.configure(font = Desired_font) 
+    lbl3.pack()  
+    lbl3.configure(font = Desired_font)
+    lbl6 = Label(root, text = 'Check your home directory')
+    lbl6.pack()
 
 btn =Button(root,text = 'DOWNLOAD',bg = 'bisque2', padx = 2, command = Downloader)
 btn.pack()
